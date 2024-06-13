@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    width: 960px;
+}
+
+div {
+    flex: 2 1 auto;
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    background-color: lightgreen;
+    border: 2px solid red;
+}
