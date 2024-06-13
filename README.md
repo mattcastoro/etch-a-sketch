@@ -1,1 +1,2 @@
 # etch-a-sketch
+For this project I will be initially creating a 16x16 interactive grid that a user will be able to eventually decide the number of squares per side for display, as well as a hover over effect as the user's mouse interacts with the canvas.
