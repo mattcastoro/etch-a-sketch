@@ -4,11 +4,12 @@
     padding: 0px;
     border: 0px;
     margin: 0px;
+    height: auto;
     width: 960px;
 }
 
 div {
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     padding: 10px;
     margin: 0px;
     height: auto;
