@@ -1,3 +1,5 @@
+// Pulls user's input, prompts user if they are out of input bounds, and calls createGrid()
+// function to build the grid //
 function returnNumber() {
     let input = document.getElementById("userInput").value;
     if (input > 100) {
@@ -9,11 +11,11 @@ function returnNumber() {
     }
 }
 
+// Clears existing grid and then creates new grid based on user's input //
 function createGrid(num) {
-
     const container = document.querySelector(".container");
     container.replaceChildren();
-    
+
     for (let i = 0; i < num; i++) {
         const div = document.createElement("div");
         div.classList.add("column");
@@ -24,7 +26,13 @@ function createGrid(num) {
             div.appendChild(cell);
         }
     }
+    // Gets elements by class name, iterates through the list, and applies hover effect for the mouseover event //
+    let hovCell = document.getElementsByClassName("cell");
+    let numHovCell = hovCell.length;
+    console.log(hovCell);
+    for (let i = 0; i < numHovCell; i++) {
+        hovCell[i].addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "black";
+        });
+    }
 }
-
-// createGrid(10);
-
