@@ -28,9 +28,7 @@ function createGrid(num) {
     }
     // Gets elements by class name, iterates through the list, and applies hover effect for the mouseover event //
     let hovCell = document.getElementsByClassName("cell");
-    let numHovCell = hovCell.length;
-    console.log(hovCell);
-    for (let i = 0; i < numHovCell; i++) {
+    for (let i = 0; i < hovCell.length; i++) {
         hovCell[i].addEventListener("mouseover", (event) => {
             event.target.style.backgroundColor = "black";
         });
